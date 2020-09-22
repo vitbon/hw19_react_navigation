@@ -21,7 +21,7 @@ export default class ViewContact extends Component {
 
   closeModal = async () => {
     await this.setState({isOpen: false});
-    window.location.href = "/contact";
+    window.location.href = "/hw19_react_navigation/contact";
     //return <Redirect to="/contact" />
   }
 
