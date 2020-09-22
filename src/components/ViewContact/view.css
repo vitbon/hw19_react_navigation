@@ -1,0 +1,121 @@
+.modal_overlay {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 1; /* Sit on top */
+  overflow: auto; /* Enable scroll if needed */
+  backdrop-filter: blur(20px);
+  position: relative;
+}
+
+.modal_window {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #0f131d;
+  margin: auto;
+  border: 1px solid #001d80;
+  width: 450px;
+  box-shadow: 0 0px 60px 0 rgba(0,0,0,0.8), 0 0px 40px 0 rgba(0,0,0,0.8);
+  z-index: 10;
+}
+
+.modal_close {
+  color: #88d8ff;
+  float: right;
+  font-size: 18px;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_header {
+  padding: 10px 22px;
+  background-color: #001244;
+  color: white;
+}
+
+.modal_title {
+  font-size: 20px;
+  color: #88d8ff;
+}
+
+.modal_body {
+  padding: 2px 22px;
+}
+
+.modal_field_title {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #b4b4b4;
+}
+
+.modal_field_box {
+  margin-top: 3px;
+  padding: 8px 8px;
+  font-size: 16px;
+  color: #dedede;
+  background-color: #080813;
+  border: 1px solid #384776;
+  width: 385px;
+}
+
+.modal_field_box:hover,
+.modal_field_box:active,
+.modal_field_box:focus {
+  border: 1px solid #5f70a5;
+  box-shadow: 0 0 15px #2f2f49;
+}
+
+
+.modal_field_big {
+  margin-top: 3px;
+  padding: 8px 8px;
+  font-size: 16px;
+  color: #dedede;
+  background-color: #080813;
+  border: 1px solid #384776;
+  width: 385px;
+  height: 60px;
+  align-content: flex-start;
+}
+
+.modal_field_big:hover,
+.modal_field_big:active,
+.modal_field_big:focus {
+  border: 1px solid #5f70a5;
+  box-shadow: 0 0 15px #2f2f49;
+}
+
+.modal_footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding: 16px 16px;
+  color: white;
+}
+
+.modal_button {
+  color: #c3b8e2;
+  margin: 10px 10px;
+  padding: 6px 10px;
+  font-size: 16px;
+  background: linear-gradient(#130e42, #1c0219);
+  border: 2px solid #550021;
+  width: 100px;
+  cursor: pointer;
+}
+
+.modal_button:hover,
+.modal_button:focus {
+  border: 2px solid #800031;
+  color: white;
+}
